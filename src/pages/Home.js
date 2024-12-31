@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Footer.css";
-import f1 from './images/f1.jpeg';
 import fore from './images/i.png';
 import waste from './images/waste.jpeg';
 import stock from './images/stock.jpeg';
@@ -11,7 +10,7 @@ import expiration from './images/expiration.jpeg';
 
 const HomePage = () => {
     const [activeSection, setActiveSection] = useState("home");
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [setIsAuthenticated] = useState(false);
     const [isRegistering, setIsRegistering] = useState(false);
     const navigate = useNavigate();
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from "../components/Sidebar"; // Import the reusable Sidebar component
-import { Grid, Card, Typography, TextField, Select, MenuItem, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import { Grid, Card, Typography, TextField, MenuItem, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 const MultiOutletManagement = () => {
   const [fromOutlet, setFromOutlet] = useState('outlet1');

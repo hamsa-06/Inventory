@@ -44,7 +44,7 @@ const WasteAnalytics = () => {
   const [newWaste, setNewWaste] = useState({ type: '', quantity: '', supplier: '', date: '' });
   const [editWaste, setEditWaste] = useState(null);
   const [search, setSearch] = useState('');
-  const [loading, setLoading] = useState(false); // Loader state for simulate data fetching
+  const [loading] = useState(false); // Loader state for simulate data fetching
   const [selectedWasteId, setSelectedWasteId] = useState(null);
 
   // Handle adding new waste

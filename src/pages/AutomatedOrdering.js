@@ -2,37 +2,15 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar"; 
 import './AutomatedOrdering.css';
 import {
-  Container,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-  IconButton,
   Typography,
-  TextField,
   Box,
-  Tooltip,
-  InputAdornment,
-  Card,
-  CardContent,
-  Stack,
-  Button,
-  Modal,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  CircularProgress,
 } from '@mui/material';
 const AutomatedOrdering = () => {
   const [isOrderHistoryOpen, setOrderHistoryOpen] = useState(false);
   const [automationEnabled, setAutomationEnabled] = useState(false);
   const [reorderThreshold, setReorderThreshold] = useState(20);
   const [orderHistory, setOrderHistory] = useState([]);
-  const [lowStockProducts, setLowStockProducts] = useState([
+  const [lowStockProducts] = useState([
     { productName: "Milk", currentStock: 5, reorderLevel: reorderThreshold, suggestedQuantity: 15 },
     { productName: "Eggs", currentStock: 10, reorderLevel: reorderThreshold, suggestedQuantity: 40 },
     { productName: "Bread", currentStock: 8, reorderLevel: reorderThreshold, suggestedQuantity: 12 },
