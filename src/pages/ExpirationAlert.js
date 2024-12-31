@@ -74,7 +74,6 @@ const [alerts, setAlerts] = useState([
 
   const handleConfirmAction = () => {
     const id = currentId;
-    const actionType = currentAction;
 
     // Remove the acted item from the state
     setAlerts(prevAlerts => prevAlerts.filter(alert => alert.id !== id));
