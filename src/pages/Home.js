@@ -10,19 +10,16 @@ import expiration from './images/expiration.jpeg';
 
 const HomePage = () => {
     const [activeSection, setActiveSection] = useState("home");
-    const [setIsAuthenticated] = useState(false);
     const [isRegistering, setIsRegistering] = useState(false);
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
-        setIsAuthenticated(true);
         navigate("/dashboard");
     };
 
     const handleRegister = (e) => {
         e.preventDefault();
-        // Placeholder for registration logic
         alert("Registration successful! Please log in.");
         setIsRegistering(false); // Switch back to login after registration
     };
