@@ -1,0 +1,68 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 800px;
+}
+
+.register-left {
+    flex: 1;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-animation {
+    width: 80%;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.register-right {
+    flex: 1;
+    padding: 40px;
+}
+
+.register-right h2 {
+    color: #00796b;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.text-center {
+    font-size: 14px;
+}
+
+.text-center a {
+    color: #00796b;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

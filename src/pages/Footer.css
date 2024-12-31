@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  p {
+  
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px; /* Reduced padding to make the navbar more compact */
+  height: 60px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8c102;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-image: url("./images/hero.jpeg");
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh; /* Full viewport height */
+  padding: 20px;
+ 
+  background-color: #f8f9fa;
+  text-align: center;
+  box-sizing: border-box;
+  }
+  .display-4{
+    padding-top: 100px;
+    width: 700px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+   
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+   
+    margin: 10px 0 30px;
+   
+  }
+  
+  /* Features Section */
+  #features {
+    background-color: #fff;
+  }
+  
+  #features h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .ab{
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text within elements */
+    gap: 10px; /* Adds spacing between elements */
+    padding: 0 10px; /* Adds space on the left and right */
+    max-width: 800px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the container on the page */
+
+  }
+  .container .row{
+      padding-bottom: 0px;
+  }
+ 
+  #home {
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: rgb(9, 9, 9);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  
+    animation: backgroundAnimation 15s infinite linear;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ensures the image spans the entire width of the card */
+    height: 80% ; /* Sets a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px; /* Adds rounded corners to match the card's style */
+}
+
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* About Us Section */
+  #aboutus {
+    text-align: center;
+    width: 100%;
+
+  }
+  
+  #aboutus h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #aboutus p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  /* Login/Register Section */
+  #login-register {
+    height: 80vh;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+  }
+
+  
+  #login-register h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #login-register .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  #login-register .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  #login-register .btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  #login-register .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      height: 50px;
+  }
+
+  h1.display-4 {
+      font-size: 1.8rem;
+  }
+
+  .hero-section p h1 {
+      font-size: 1rem;
+  }
+
+  .card img {
+      height: 200px;
+      object-fit: cover;
+  }
+    .hero-section {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center; /* Center text */
+    }
+  
+    .hero-section p {
+      max-width: 100%; /* Use full width for smaller screens */
+    }
+  
+    .hero-section .cta-button {
+      margin-top: 20px; /* Add spacing for button */
+    }
+  }
