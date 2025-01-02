@@ -19,17 +19,17 @@ function ExpirationAlerts() {
 
  // Hardcoded data for alerts
 const [alerts, setAlerts] = useState([
-  { id: 1, productName: "Milk", stockQuantity: 30, expirationDate: "2025-01-04", daysRemaining: 2, status: "Expiring Soon" },
-  { id: 2, productName: "Bread", stockQuantity: 50, expirationDate: "2025-01-03", daysRemaining: 1, status: "Expiring Soon" },
-  { id: 3, productName: "Apples", stockQuantity: 20, expirationDate: "2025-01-03", daysRemaining: 0, status: "Expired" },
-  { id: 4, productName: "Yogurt", stockQuantity: 20, expirationDate: "2025-01-06", daysRemaining: 0, status: "Expired" },
-  { id: 5, productName: "Frozen Pizza", stockQuantity: 20, expirationDate: "2025-01-04", daysRemaining: 0, status: "Expired" },
-  { id: 6, productName: "Bananas", stockQuantity: 15, expirationDate: "2025-01-02", daysRemaining: 1, status: "Expiring Soon" },
-  { id: 7, productName: "Eggs", stockQuantity: 40, expirationDate: "2025-01-05", daysRemaining: 3, status: "Expiring Soon" },
-  { id: 8, productName: "Spinach", stockQuantity: 10, expirationDate: "2025-01-02", daysRemaining: 0, status: "Expired" },
-  { id: 9, productName: "Chicken Breast", stockQuantity: 12, expirationDate: "2025-01-03", daysRemaining: 1, status: "Expiring Soon" },
-  { id: 10, productName: "Fish Fillets", stockQuantity: 8, expirationDate: "2025-01-04", daysRemaining: 2, status: "Expiring Soon" },
-  { id: 11, productName: "Lettuce", stockQuantity: 30, expirationDate: "2025-01-05", daysRemaining: 3, status: "Expiring Soon" }
+  { "id": 1, "productName": "Milk", "stockQuantity": 30, "expirationDate": "2025-01-04", "daysRemaining": 1, "status": "Expiring Soon" },
+  { "id": 2, "productName": "Bread", "stockQuantity": 50, "expirationDate": "2025-01-03", "daysRemaining": 0, "status": "Expiring Today" },
+  { "id": 3, "productName": "Apples", "stockQuantity": 20, "expirationDate": "2025-01-03", "daysRemaining": 0, "status": "Expiring Today" },
+  { "id": 4, "productName": "Yogurt", "stockQuantity": 20, "expirationDate": "2025-01-06", "daysRemaining": 3, "status": "Expiring Soon" },
+  { "id": 5, "productName": "Frozen Pizza", "stockQuantity": 20, "expirationDate": "2025-01-04", "daysRemaining": 1, "status": "Expiring Soon" },
+  { "id": 6, "productName": "Bananas", "stockQuantity": 15, "expirationDate": "2025-01-02", "daysRemaining": -1, "status": "Expired" },
+  { "id": 7, "productName": "Eggs", "stockQuantity": 40, "expirationDate": "2025-01-05", "daysRemaining": 2, "status": "Expiring Soon" },
+  { "id": 8, "productName": "Spinach", "stockQuantity": 10, "expirationDate": "2025-01-02", "daysRemaining": -1, "status": "Expired" },
+  { "id": 9, "productName": "Chicken Breast", "stockQuantity": 12, "expirationDate": "2025-01-03", "daysRemaining": 0, "status": "Expiring Today" },
+  { "id": 10, "productName": "Fish Fillets", "stockQuantity": 8, "expirationDate": "2025-01-04", "daysRemaining": 1, "status": "Expiring Soon" },
+  { "id": 11, "productName": "Lettuce", "stockQuantity": 30, "expirationDate": "2025-01-05", "daysRemaining": 2, "status": "Expiring Soon" }
 ]);
 
 
